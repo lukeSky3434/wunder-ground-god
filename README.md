@@ -44,4 +44,4 @@ I created a multi-container configuration, which contains:
 * Grafana
 * Wunder Ground God (this project)
 
-You can find the details in the file: [Multi Container Configuration](https://github.com/lukeSky3434/wunder-ground-god/compose.yaml)
+You can find the details in the file: [Multi Container Configuration](compose.yaml)
