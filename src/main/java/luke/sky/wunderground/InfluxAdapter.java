@@ -82,7 +82,7 @@ public class InfluxAdapter implements DbAdapter
 
 		StringBuilder dimensions = new StringBuilder();
 		dim.forEach(x -> {
-			dimensions.append(", ").append(x.name).append("=").append(x.value);
+			dimensions.append(",").append(x.name).append("=").append(x.value);
 		});
 
 		String plain = category + dimensions + " " + name + "=" + value + " "
