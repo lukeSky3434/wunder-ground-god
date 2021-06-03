@@ -68,15 +68,14 @@ There should be three directories available in the HOME directory of influx:
 In the HOME directory of grafana there should be one directory:
 * *data*: the docker container will put the data of grafana in this directory
 
-Before you start up the wunder-ground-god you have to create the database for it.
-
-First you have to login to the container:
+Before you start up the wunder-ground-god you have to create the database for it:
+* First you have to login to the container:
 `sudo docker exec -it influx /bin/bash`
 
-Second connect to the influx cli:
+* Second connect to the influx cli:
 `influx`
 
-Third create the database:
+* Third create the database:
 `CREATE DATABASE wheater;`
 
 Congratulations, you are my local hero!
