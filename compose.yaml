@@ -1,1 +1,50 @@
-test
+version: '3.7'
+
+services:
+  influxdb:
+    container_name: influx
+    image: influxdb:1.8
+    volumes:
+      - ${INFLUX_DB_HOME:-/home/pi/influxdb/}data:/var/lib/influxdb
+      - ${INFLUX_DB_HOME:-/home/pi/influxdb/}config/influxdb.conf:/etc/influxdb/influxdb.conf:ro
+      - ${INFLUX_DB_HOME:-/home/pi/influxdb/}backup/:/backup
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    ports:
+      - target: 8086
+        published: 8086
+        protocol: tcp
+        mode: host
+      - target: 8083
+        published: 8083
+        protocol: tcp
+        mode: host
+    command:
+      - '--config=/etc/influxdb/influxdb.conf'
+    restart: always
+
+  grafana:
+    container_name: grafana
+    image: grafana/grafana
+    network_mode: host
+    volumes:
+      - ${GRAFANA_HOME:-/home/pi/grafana/}data:/var/lib/grafana
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    user: ${UID:-1000}
+    restart: always
+
+  wunder-ground-god:
+    container_name: godfather
+    image: pendl2/wunder-ground-god:latest
+    restart: always
+    network_mode: host
+    environment:
+      - API.KEY=<place here the api key>
+      - DEVICE.ID=<place here the device id>
+    volumes:
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+    depends_on:
+      - influxdb
+      - grafana
