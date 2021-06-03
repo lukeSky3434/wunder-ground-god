@@ -47,7 +47,7 @@ I created a multi-container configuration, which contains:
 You can find the details in the file: [Multi Container Configuration](compose.yaml)
 
 
-The [compose.yaml](smarthome/compose.yaml) includes the service for the influxdb and grafana. As well the fronius energy consumption service will be started, which collects the data. For a further look to configure the fronius energy consumption, you have to switch to the *fronius-energy* [repository](https://github.com/lukeSky3434/fronius-energy).
+The [compose.yaml](smarthome/compose.yaml) includes the service for the influxdb and grafana. As well the wunder-ground-god service will be started, which collects the data.
 
 ### Configuration
 
