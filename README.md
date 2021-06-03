@@ -56,6 +56,8 @@ Environment Variable | Default | Description
 INFLUX_DB_HOME | /home/pi/influxdb/ | Variable which points influxdb home directory
 GRAFANA_HOME | /home/pi/grafana/ | Variable which points to the grafana home directory
 
+Take care, that you don't forget to fill in the API.KEY and DEVICE.ID in the compose file!
+
 ### Precondition
 
 There should be three directories available in the HOME directory of influx:
