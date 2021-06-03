@@ -47,7 +47,7 @@ I created a multi-container configuration, which contains:
 You can find the details in the file: [Multi Container Configuration](compose.yaml)
 
 
-The [compose.yaml](smarthome/compose.yaml) includes the service for the influxdb and grafana. As well the wunder-ground-god service will be started, which collects the data.
+The [compose.yaml](compose.yaml) includes the service for the influxdb and grafana. As well the wunder-ground-god service will be started, which collects the data.
 
 ### Configuration
 
