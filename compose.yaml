@@ -42,6 +42,7 @@ services:
     environment:
       - API.KEY=<place here the api key>
       - DEVICE.ID=<place here the device id>
+      - POLL.TIME.MS=60000
     volumes:
       - /etc/timezone:/etc/timezone:ro
       - /etc/localtime:/etc/localtime:ro
