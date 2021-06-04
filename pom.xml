@@ -9,11 +9,18 @@
   <scm>
     <developerConnection>scm:git:https://github.com/lukeSky3434/wunder-ground-god.git</developerConnection>
   </scm>
+  <distributionManagement>
+    <repository>
+      <id>maven-repository</id>
+      <url>${github.maven.repository}</url>
+    </repository>
+  </distributionManagement>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
     <docker.registry.url>registry.hub.docker.com/pendl2/wunder-ground-god</docker.registry.url>
+    <github.maven.repository>file:///tmp/repository/maven-repository/</github.maven.repository>
   </properties>
   <dependencies>
     <dependency>
