@@ -36,7 +36,7 @@ services:
 
   wunder-ground-god:
     container_name: godfather
-    image: pendl2/wunder-ground-god:latest
+    image: pendl2/wunder-ground-god:1.0.0
     restart: always
     network_mode: host
     environment:
