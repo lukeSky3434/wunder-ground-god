@@ -78,14 +78,14 @@
         </executions>
         <configuration>
           <from>
-            <image>pendl2/openjdk:11</image>
+            <image>openjdk:11.0.12-slim</image>
             <platforms>
               <platform>
                 <architecture>amd64</architecture>
                 <os>linux</os>
               </platform>
               <platform>
-                <architecture>arm</architecture>
+                <architecture>arm64</architecture>
                 <os>linux</os>
               </platform>
             </platforms>
