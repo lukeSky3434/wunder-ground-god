@@ -4,11 +4,11 @@
   <groupId>com.mycompany</groupId>
   <artifactId>WunderGroundGod</artifactId>
   <name>Wunder Ground God</name>
-  <version>1.0.5</version>
+  <version>1.0.6-SNAPSHOT</version>
   <packaging>jar</packaging>
   <scm>
     <developerConnection>scm:git:ssh://git@github.com/lukeSky3434/wunder-ground-god.git</developerConnection>
-    <tag>WunderGroundGod-1.0.5</tag>
+    <tag>WunderGroundGod-1.0.2</tag>
   </scm>
   <distributionManagement>
     <repository>
